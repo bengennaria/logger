@@ -20,15 +20,15 @@ const _ = require('lodash')
 const Appdirectory = require('appdirectory')
 const chalk = require('chalk')
 const { GetElectronProcessType } = require('electron-process-type/lib/v3')
-const isDebug = true //require('@sidneys/is-env')('debug')
-const isNolog = require('@sidneys/is-env')('nolog')
+const isDebug = require('@bengennaria/is-env')('debug')
+const isNolog = require('@bengennaria/is-env')('nolog')
 const moment = require('moment')
 const present = require('present')
 const readPkgUp = require('read-pkg-up')
 const rootPath = require('root-path')
 
 /**
- * Base Directory & package.json of this module (@sidneys/logger)
+ * Base Directory & package.json of this module (@bengennaria/logger)
  * @constant
  */
 const thisModuleDirectory = __filename
@@ -448,11 +448,11 @@ module.exports = (options = {}) => {
     // This lets each required instance access its configuration directly
     module.exports.configuration = configuration
 
-    // Check if 'global[@sidneys/logger]' exists
+    // Check if 'global[@bengennaria/logger]' exists
     if (!global[thisModulePackageName]) {
-        // Create object at key 'global[@sidneys/logger]'
+        // Create object at key 'global[@bengennaria/logger]'
         global[thisModulePackageName] = {}
-        // Create HashMap at key 'global[@sidneys/logger].configurations'
+        // Create HashMap at key 'global[@bengennaria/logger].configurations'
         global[thisModulePackageName].configurations = new Map()
     }
 
@@ -464,7 +464,7 @@ module.exports = (options = {}) => {
     // Add configuration with filename as key to global[packageName].configurations
     global[thisModulePackageName].configurations.set(requiringModuleFilePath, module.exports.configuration)
 
-    // This prevents '@sidneys/logger' from being added to the 'require.cache' object after having been required.
+    // This prevents '@bengennaria/logger' from being added to the 'require.cache' object after having been required.
     // This enables automatic log message prefixes, depending from where a logging method was called.
     delete require.cache[__filename]
 

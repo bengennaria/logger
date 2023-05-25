@@ -1,20 +1,20 @@
 {
-  "name": "@sidneys/logger",
+  "name": "@bengennaria/logger",
   "version": "1.151.0",
   "description": "ES6-based logger with focus on Electron cross-platform Desktop apps",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/sidneys/logger",
+  "homepage": "https://github.com/bengennaria/logger",
   "author": {
-    "name": "sidneys",
-    "email": "sidneys.github.io@outlook.com",
-    "url": "https://bitbucket.org/sidneys"
+    "name": "bengennaria",
+    "email": "ben.gennaria@gmail.com",
+    "url": "https://github.com/bengennaria"
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/sidneys/logger.git"
+    "url": "https://github.com/bengennaria/logger.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/sidneys/logger/issues"
+    "url": "https://github.com/bengennaria/logger/issues"
   },
   "deprecated": false,
   "engines": {
@@ -31,7 +31,7 @@
     "tools"
   ],
   "dependencies": {
-    "@sidneys/is-env": "^1.143.0",
+    "@bengennaria/is-env": "git+https://bengennaria@github.com/bengennaria/is-env.git",
     "appdirectory": "^0.1.0",
     "chalk": "^4.1.0",
     "electron-process-type": "^4.2.0",
