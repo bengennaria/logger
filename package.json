@@ -1,0 +1,49 @@
+{
+  "name": "@sidneys/logger",
+  "version": "1.151.0",
+  "description": "ES6-based logger with focus on Electron cross-platform Desktop apps",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/sidneys/logger",
+  "author": {
+    "name": "sidneys",
+    "email": "sidneys.github.io@outlook.com",
+    "url": "https://bitbucket.org/sidneys"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/sidneys/logger.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/sidneys/logger/issues"
+  },
+  "deprecated": false,
+  "engines": {
+    "node": ">= 12.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "os": [
+    "darwin",
+    "win32",
+    "linux"
+  ],
+  "keywords": [
+    "development",
+    "tools"
+  ],
+  "dependencies": {
+    "@sidneys/is-env": "^1.143.0",
+    "appdirectory": "^0.1.0",
+    "chalk": "^4.1.0",
+    "electron-process-type": "^4.2.0",
+    "fs-extra": "^9.0.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "present": "^1.0.0",
+    "read-pkg-up": "^7.0.1",
+    "root-path": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0"
+  },
+  "main": "./index.js"
+}
